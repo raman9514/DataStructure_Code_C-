@@ -4,11 +4,10 @@
 #include<stdlib.h>
 using namespace std;
 
-void bubble()
+void bubble(int * array , int n)
  {
-  int array[]={1,3,5,23,6,34,6,23,5,76};
-  int n=10;
-  
+ 
+
 
     for(int i=0;i<n;i++)
      {for(int j=0;j<n-1;j++)
@@ -24,18 +23,19 @@ void bubble()
      }
 
 
-     for(int j=0;j<n-1;j++)
-       cout<<array[j]<<endl;
+    
 
 
  }
 int main()
-{
+{  system("cls");
     int array[]={1,3,5,23,6,34,6,23,5,76};
     int n=10;
 
-    bubble();
-
+    bubble(array,n);
+    
+     for(int j=0;j<n-1;j++)
+       cout<<array[j]<<" ";
 
 
 return 0;}
